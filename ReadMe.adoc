@@ -1,0 +1,14 @@
+== Browser automation in Clojure
+
+This project
+
+=== Salient features of the project
+
+- Utilizes the native clojure implementation of `webdriver` protocol (doesn't rely upon `selenium`)
+- Uses simplified dependency management via `tools.deps` for clojure
+
+== Resources
+
+https://github.com/igrishaev/etaoin
+
+http://etaoin.grishaev.me/etaoin.api.html
