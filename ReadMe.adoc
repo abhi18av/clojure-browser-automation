@@ -9,6 +9,6 @@ This project
 
 == Resources
 
-https://github.com/igrishaev/etaoin
+https://github.com/igrishaev/etaoin[Etaoin Github repo]
 
-http://etaoin.grishaev.me/etaoin.api.html
+http://etaoin.grishaev.me/etaoin.api.html[Etaoin API docs]

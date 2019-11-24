@@ -2,6 +2,9 @@
   (:use etaoin.api)
   (:require [clojure.edn :as edn]))
 
+
+;;=========== Configurations =============
+
 (def secrets
   (edn/read-string
     (slurp "./resources/secrets.edn")))
@@ -11,12 +14,11 @@
     (slurp "./resources/draftPost.edn")))
 
 
+(def driver (firefox {:path-driver  (:path-driver secrets)
+                      :path-browser (:path-browser secrets)}))
 
-(def driver (firefox {:path-driver  "/usr/local/bin/geckodriver"
-                      :path-browser "/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox"}))
 
-
-;;;;;;;;;
+;;=========== Base functions =============
 
 
 (defn login
@@ -74,6 +76,7 @@
   (screenshot driver "./resources/draftPost.png")
   (wait 2))
 
+;;=========== Main code  =============
 
 (do
   (login)
