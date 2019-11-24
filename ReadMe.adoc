@@ -1,11 +1,25 @@
 == Browser automation in Clojure
 
-This project
+TODO
 
 === Salient features of the project
 
 - Utilizes the native clojure implementation of `webdriver` protocol (doesn't rely upon `selenium`)
 - Uses simplified dependency management via `tools.deps` for clojure
+
+=== Setting up the config file
+
+[source,clojure]
+----
+{:username     "myUserName"
+ :password     "myPassword"
+ :path-driver  "/usr/local/bin/geckodriver"
+ :path-browser "/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox"}
+----
+
+== Walkthrough video
+
+TODO
 
 == Resources
 
