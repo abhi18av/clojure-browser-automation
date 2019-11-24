@@ -59,6 +59,7 @@
   []
 
   (wait 3)
+
   (click-el driver
             (query driver {:css "#HeaderUserActions--NewPost"}))
   (wait 3)
@@ -72,14 +73,20 @@
 
   (click-el driver
             (query driver {:fn/has-text "Save draft"}))
+  (wait 2)
 
   (screenshot driver "./resources/draftPost.png")
   (wait 2))
 
 ;;=========== Main code  =============
+(defn main
+  "This function is the main entry point for the code.
 
-(do
-  (login)
-  (create-draft-post))
+  Just fire up the repl, move to this namespace and execute `(main)`."
+  []
+  (do
+    (login)
+    (create-draft-post)))
+
 
 
