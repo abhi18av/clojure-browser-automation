@@ -25,6 +25,12 @@ In the accompanying video I'll show how to
 - A brief introduction to the capabilities of `etaoin` library.
 - A walkthrough of the code as well as the execution flow.
 
+
+.Automated browser login for Reddit in Clojure
+[#youtube-walkthrough]
+[caption="Video Walkthrough: ",link=https://youtu.be/jUdS4tXFBXE]
+image::video_screenshot.png[Video Walkthrough,500,300]
+
 == Resources
 
 https://github.com/igrishaev/etaoin[Etaoin Github repo]
