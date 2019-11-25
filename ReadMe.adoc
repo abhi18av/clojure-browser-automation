@@ -1,11 +1,11 @@
 == Browser automation in Clojure
 
-TODO
+This project show-cases how you can use a pure `clojure REPL` driven approach to browser automation.
 
 === Salient features of the project
 
-- Utilizes the native clojure implementation of `webdriver` protocol (doesn't rely upon `selenium`)
-- Uses simplified dependency management via `tools.deps` for clojure
+- Utilizes the native clojure implementation of `webdriver` protocol (doesn't rely upon `selenium`) via `etaoin` library.
+- Uses simplified dependency management via `tools.deps` for clojure.
 
 === Setting up the config file
 
@@ -19,7 +19,11 @@ TODO
 
 == Walkthrough video
 
-TODO
+In the accompanying video I'll show how to
+
+- Get up and running with the `IntelliJ Cursive plugin` for `clojure`
+- A brief introduction to the capabilities of `etaoin` library.
+- A walkthrough of the code as well as the execution flow.
 
 == Resources
 
