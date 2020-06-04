@@ -3,7 +3,8 @@
   (:require [clojure.edn :as edn]
             [clojure.string :as clj-str]
             [clojure.java.io :as io]
-            [taoensso.timbre :as timbre]))
+            [taoensso.timbre :as timbre]
+            [taoensso.timbre.appenders.core :as appenders]))
 
 
 ;;=========== Configurations =============
