@@ -5,9 +5,15 @@
 
 ;;=========== Configurations =============
 
+
 (def secrets
   (edn/read-string
     (slurp "./resources/secrets.edn")))
+
+
+(timbre/merge-config!
+  {:appenders {:spit (appenders/spit-appender {:fname (:logfile-name secrets})}})
+
 
 (def driver (firefox {:path-driver  (:path-driver secrets)
                       :path-browser (:path-browser secrets)}))
