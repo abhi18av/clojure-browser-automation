@@ -1,6 +1,9 @@
 (ns core
   (:use etaoin.api)
-  (:require [clojure.edn :as edn]))
+  (:require [clojure.edn :as edn]
+            [clojure.string :as clj-str]
+            [clojure.java.io :as io]
+            [taoensso.timbre :as timbre]))
 
 
 ;;=========== Configurations =============
